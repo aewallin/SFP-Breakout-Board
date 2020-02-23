@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title "SFP breakout-board")
-    (company "VTT LTD, Anders Wallin")
-    (comment 1 "PCB run 2018-11-25")
+    (company "Anders.e.e.Wallin \"at\" gmail.com")
+    (comment 1 "1st PCB run 2018-11-25")
   )
 
   (layers
