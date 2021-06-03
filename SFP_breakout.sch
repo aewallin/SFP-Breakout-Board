@@ -38,7 +38,7 @@ $EndComp
 Wire Wire Line
 	6000 4600 6000 4550
 $Comp
-L Connector:USB_B_Micro J101
+L SFP_breakout-rescue:USB_B_Micro-Connector J101
 U 1 1 5BFF0CAB
 P 1100 5800
 F 0 "J101" H 1155 6267 50  0000 C CNN
@@ -1070,7 +1070,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 2500 4450 2500
 $Comp
-L Device:Jumper JP101
+L SFP_breakout-rescue:Jumper-Device JP101
 U 1 1 5C0A3EFC
 P 5150 1850
 F 0 "JP101" H 5150 2114 50  0000 C CNN
@@ -1260,7 +1260,7 @@ Wire Wire Line
 	4800 2050 4600 2050
 Text Notes 4650 6800 0    50   ~ 0
 1,9V 2mA LED\nuse 680R (?)
-Text Notes 2250 3950 0    50   ~ 0
+Text Notes 3000 4450 0    50   ~ 0
 describe rate-select here!
 $Comp
 L Regulator_Linear:LT1963AxQ-3.3 U101
@@ -1291,4 +1291,6 @@ Wire Notes Line
 	11150 1450 7600 1450
 Wire Notes Line
 	7600 1450 7600 500 
+Text Notes 700  4100 0    50   ~ 0
+TX_FAULT:\nshould be pulled up with a 4.7K – 10KΩ resistor on the host board. \nPull up voltage between 2.0V and VccT, R+0.3V.  When high,output \nindicates  a  laser  fault  of  some  kind.    Low  indicates  normal \noperation.  In  the  lowstate, the output will be pulled to < 0.8V.\n\n\nTX_DISABLE\nLow (0 – 0.8V):    Transmitter on\n(>0.8, < 2.0V):     Undefined\nHigh (2.0 – 3.465V): Transmitter Disabled\nOpen:                              Transmitter Disabled
 $EndSCHEMATC
