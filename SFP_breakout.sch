@@ -1294,7 +1294,13 @@ Wire Notes Line
 Text Notes 700  4100 0    50   ~ 0
 TX_FAULT:\nshould be pulled up with a 4.7K – 10K resistor on the host board. \nPull up voltage between 2.0V and VccT, R+0.3V.  When high,output \nindicates  a  laser  fault  of  some  kind.    Low  indicates  normal \noperation.  In  the  lowstate, the output will be pulled to < 0.8V.\n\n\nTX_DISABLE\nLow (0 – 0.8V):    Transmitter on\n(>0.8, < 2.0V):     Undefined\nHigh (2.0 – 3.465V): Transmitter Disabled\nOpen:                              Transmitter Disabled
 Text Notes 8500 3600 0    50   ~ 0
-edge-mount SMA
+edge-mount SMA\nDigikey ACX1426-ND\n
 Text Notes 7750 2050 0    50   ~ 0
 See SFP document\nINF-8074.PDF\nINF-8074i Specification for\nSFP (Small Formfactor Pluggable) Transceiver
+Text Notes 5450 3000 0    50   ~ 0
+connector Digikey A97943CT-ND\ncage U77-A1114-100TCT-ND\n\n
+Text Notes 4000 1350 0    50   ~ 0
+Digikey 296-8234-1-ND\n
+Text Notes 450  5050 0    50   ~ 0
+Digikey A98333-ND\n
 $EndSCHEMATC
