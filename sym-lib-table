@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name SFP_breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/SFP_breakout-rescue.lib)(options "")(descr ""))
-)
